@@ -1,0 +1,17 @@
+{
+    "name": "eba/telebirr-proxy",
+    "autoload": {
+        "psr-4": {
+            "Eba\\TelebirrProxy\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eba Aleamyehu",
+            "email": "ebaalemayhu3@gmail.com"
+        }
+    ],
+    "require": {
+        "eba/telebirr": "^1.1"
+    }
+}
