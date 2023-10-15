@@ -5,6 +5,8 @@ $telebirr_decrypted_data = \telebirr\Telebirr::decrypt_RSA(
 );
 
 print_r($telebirr_decrypted_data);
+$myfile = fopen("log.txt", "w+") or die("Unable to open file!");
+fwrite($myfile, $telebirr_decrypted_data);
 
 $client = new \GuzzleHttp\Client();
 $client->post(
