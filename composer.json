@@ -12,6 +12,6 @@
         }
     ],
     "require": {
-        "eba/telebirr": "^1.1"
+        "eba/telebirr": "^1.4"
     }
 }
