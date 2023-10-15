@@ -11,6 +11,12 @@ fwrite($myfile, $telebirr_decrypted_data);
 
 
 $client = new \GuzzleHttp\Client();
-$response = $client->post('https://www.medhhanet.com/telebirr/notifyUrl', [
-    GuzzleHttp\RequestOptions::JSON => json_decode($telebirr_decrypted_data)
-]);
+try {
+    $response = $client->post('https://www.medhhanet.com/telebirr/notifyUrl', [
+        GuzzleHttp\RequestOptions::JSON => json_decode($telebirr_decrypted_data)
+    ]);
+    fwrite($myfile, $response);
+} catch (\GuzzleHttp\Exception\GuzzleException $e) {
+    fwrite($myfile, $e);
+}
+
