@@ -13,6 +13,7 @@
     ],
     "require": {
         "eba/telebirr": "^1.6",
-        "guzzlehttp/guzzle": "^7.8"
+        "guzzlehttp/guzzle": "^7.8",
+        "phpseclib/phpseclib": "^3.0"
     }
 }
