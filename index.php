@@ -1,8 +1,9 @@
 <?php
-require_once './vendor/autoload.php';
-
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
+require_once './vendor/autoload.php';
+
+
 $telebirr_decrypted_data = \Eba\TelebirrPhp\Telebirr::decrypt_RSA('');
 
 print_r($telebirr_decrypted_data);
