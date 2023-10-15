@@ -8,6 +8,8 @@ $telebirr_decrypted_data = \Eba\TelebirrPhp\Telebirr::decrypt_RSA('MIIBIjANBgkqh
 
 print_r($telebirr_decrypted_data);
 fwrite($myfile, $telebirr_decrypted_data);
+fwrite($myfile, $_SERVER['REMOTE_ADDR']);
+
 
 
 $client = new \GuzzleHttp\Client();
